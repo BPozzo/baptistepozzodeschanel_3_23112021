@@ -131,9 +131,11 @@ body {
     flex-direction: column;
 }
 
-/* .restaurants__cards {
+.restaurants__cards {
     display: flex;
-} */
+    flex-direction: column;
+    
+}
 
 .restaurants__card {
     position: relative;
@@ -145,6 +147,7 @@ body {
     border-radius: 20px;
     /* transform: scale(1); */
     background-color: white;
+    margin-top: 20px;
 }
 .restaurants__image {
     width: 100%;
