@@ -120,7 +120,42 @@ body {
 
 /* Restaurants */
 
+.restaurants {
+    background-color: #f6f6f6;
+    padding: 25px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    align-items: flex-start;
+    flex-direction: column;
+}
 
+/* .restaurants__cards {
+    display: flex;
+} */
+
+.restaurants__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    border-radius: 20px;
+    /* transform: scale(1); */
+    background-color: white;
+}
+.restaurants__image {
+    width: 100%;
+    height: 190px;
+}
+.restaurants__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
 
 /* .restaurants__images {
     width: 200px;
