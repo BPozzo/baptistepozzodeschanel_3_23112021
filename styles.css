@@ -113,6 +113,7 @@ body {
 .process__icon {
     color: #7e7e7e;
     margin: 0 20px;
+    width: 20px;
 }
 .process__step:hover {
     background-color: var(--secondary);
@@ -165,3 +166,51 @@ body {
     max-height: 100px;
     object-fit: cover;
 } */
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background-color: #353535;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.footer__bloc {
+    /* display: inline; */
+    padding: 0 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+.footer__logo {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 20px;
+    padding: 15px 0;
+}
+.footer__links {
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+}
+.footer__link {
+    display: inline-flex;
+    /* align-items: center; */
+    flex-direction: row;
+    text-align: center;
+    height: 30px;
+    cursor: pointer;
+}
+.footer__link i {
+    width: 20px;
+    margin-right: 5px;
+}
+.footer__text {
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+}
