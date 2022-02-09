@@ -120,6 +120,9 @@ body {
 
 /* Restaurants */
 
+/* .restaurants__cards a {
+    text-decoration: none;
+} */
 .restaurants {
     background-color: #f6f6f6;
     padding: 25px;
@@ -232,3 +235,17 @@ body {
     text-decoration: none;
     color: white;
 }
+
+/* PAGES RESTAURANTS */
+/* Page La palette du goût */
+
+/* Header */
+.header__return {
+    position: absolute;
+    left: 35px;
+}
+.header__return a {
+    text-decoration: none;
+    color: black;
+}
+
