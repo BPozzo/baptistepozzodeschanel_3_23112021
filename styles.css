@@ -79,13 +79,13 @@ body {
 /* Process */
 
 .process__container {
-    padding: 25px 0;
+    padding: 25px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 .process {
-    width: 95%;
+    width: 100%;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
