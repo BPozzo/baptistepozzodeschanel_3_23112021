@@ -278,3 +278,46 @@ body {
     border-radius: 40px 40px 0 0;
     background-color: #f6f6f6;
 }
+.menu__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.menu__header--title {
+    font-family: 'Shrikhand', sans-serif;
+}
+.menu__header--like {
+    transform: scale(2);
+    padding-right: 10px;
+}
+
+/* Plats des menus */
+
+.menu__list {
+    display: grid;
+    grid-gap: 40px;
+}
+.menu__bloc {
+    display: grid;
+    grid-gap: 15px;
+}
+.menu__title {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.menu__dishes {
+    display: grid;
+    grid-gap: 10px;
+}
+.menu__dish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+}
