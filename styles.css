@@ -83,7 +83,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    
 }
 .process {
     width: 95%;
@@ -131,13 +130,11 @@ body {
     align-items: flex-start;
     flex-direction: column;
 }
-
 .restaurants__cards {
     display: flex;
     flex-direction: column;
     
 }
-
 .restaurants__card {
     position: relative;
     display: flex;
