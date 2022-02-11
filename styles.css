@@ -175,13 +175,29 @@ body {
 .restaurants__text {
     margin-left: 20px;
 }
-.restaurants__like {
+/* ***** test animation du coeur */
+.restaurants__like--empty {
     margin-right: 20px;
     transform: scale(2);
 }
-.restaurants__like:hover {
+.restaurants__like--empty:hover {
+    display: none;
+}
+.restaurants__like--full {
+    /* display: none; */
+    margin-right: 20px;
+    transform: scale(2.2);
+    position: absolute;
+    /* right: 10px; */
+    color: transparent;
+    right: 0px;
+    /* Bonne position est right: 0px */
+}
+.restaurants__like--full:hover {
+    display: initial;
     color: var(--secondary);
 }
+/* ***** */
 .restaurants__card-new {
     display: flex;
     justify-content: center;
