@@ -116,13 +116,11 @@ body {
 }
 .process__step:hover {
     background-color: var(--secondary);
+    cursor: pointer;
 }
 
 /* Restaurants */
 
-/* .restaurants__cards a {
-    text-decoration: none;
-} */
 .restaurants {
     background-color: #f6f6f6;
     padding: 25px;
@@ -152,6 +150,10 @@ body {
     border-radius: 20px;
     /* transform: scale(1); */
     background-color: white;
+}
+.restaurants__card:hover {
+    transform: scale(1.05);
+    transition: ease 0.3s;
 }
 .restaurants__image {
     width: 100%;
@@ -240,6 +242,9 @@ body {
     text-decoration: none;
     color: white;
 }
+.footer__text:hover {
+    text-decoration: underline;
+}
 /* ************************ */
 
 /* PAGES RESTAURANTS */
@@ -296,6 +301,10 @@ body {
 .menu__header--like {
     transform: scale(2);
     padding-right: 10px;
+}
+.menu__header--like:hover {
+    color: var(--secondary);
+    cursor: pointer;
 }
 
 /* Plats des menus */
@@ -369,4 +378,5 @@ body {
 }
 .menu__button:hover {
     background-color: var(--primary);
+    cursor: pointer;
 }
