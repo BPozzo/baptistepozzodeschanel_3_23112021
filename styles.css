@@ -333,6 +333,7 @@ body {
 }
 .menu__like--full:hover {
     color: var(--secondary);
+    cursor: pointer;
 }
 
 /* Plats des menus */
