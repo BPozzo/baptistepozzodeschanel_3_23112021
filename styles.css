@@ -98,7 +98,7 @@ body {
     height: auto;
     width: auto;
     margin: 10px 10px;
-    padding: 15px 0;
+    padding: 20px 0;
     position: relative;
 }
 .process__number {
@@ -111,7 +111,7 @@ body {
 }
 .process__icon {
     color: #7e7e7e;
-    margin: 0 20px;
+    margin: 0 20px 0 30px;
     width: 20px;
 }
 .process__step:hover {
