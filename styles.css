@@ -194,7 +194,7 @@ body {
     /* Bonne position est right: 0px */
 }
 .restaurants__like--full:hover {
-    display: initial;
+    /* display: initial; */
     color: var(--secondary);
 }
 /* ***** */
@@ -314,13 +314,25 @@ body {
 .menu__header--title {
     font-family: 'Shrikhand', sans-serif;
 }
-.menu__header--like {
+.menu__like--empty {
     transform: scale(2);
     padding-right: 10px;
 }
-.menu__header--like:hover {
+/* .menu__like--empty:hover {
     color: var(--secondary);
     cursor: pointer;
+} */
+.menu__like--empty:hover {
+    display: none;
+}
+.menu__like--full {
+    transform: scale(2.2);
+    position: absolute;
+    right: 165px;
+    color: transparent;
+}
+.menu__like--full:hover {
+    color: var(--secondary);
 }
 
 /* Plats des menus */
