@@ -368,6 +368,9 @@ body {
     border-radius: 20px;
     margin-bottom: 20px;
 }
+.menu__dish-and-price:hover {
+    cursor: pointer;
+}
 .menu__dish {
     display: flex;
     flex-direction: column;
