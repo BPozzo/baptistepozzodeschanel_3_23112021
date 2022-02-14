@@ -339,7 +339,7 @@ body {
     transform: scale(2.2);
     position: absolute;
     right: 15px;
-    /* color: transparent; */
+    color: transparent;
 }
 .menu__like--full:hover {
     color: var(--secondary);
