@@ -27,4 +27,27 @@
     justify-content: space-between;
     padding-right: 100px;
 }
+
 /* Pages restaurants */
+
+.menu__list {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.menu__bloc {
+    width: 30%;
+}
+.menu__dish {
+    width: 80%;
+}
+.menu__dish--title h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.menu__dish--info p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
