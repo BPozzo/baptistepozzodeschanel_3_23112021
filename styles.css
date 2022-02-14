@@ -319,6 +319,7 @@ body {
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 50px;
+    position: relative;
 }
 .menu__header--title {
     font-family: 'Shrikhand', sans-serif;
@@ -337,8 +338,8 @@ body {
 .menu__like--full {
     transform: scale(2.2);
     position: absolute;
-    right: 165px;
-    color: transparent;
+    right: 15px;
+    /* color: transparent; */
 }
 .menu__like--full:hover {
     color: var(--secondary);
