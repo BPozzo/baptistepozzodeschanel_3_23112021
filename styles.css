@@ -339,10 +339,13 @@ body {
 }
 .menu__like--full:hover {
     /* color: var(--secondary); */
-    color: #0f9932;
+    /* color: #0f9932; */
     cursor: pointer;
-    
+    background-clip: content-box;
+    background: linear-gradient(var(--secondary), var(--primary));
 }
+/* test à faire avec background-clip */
+
 /* background: linear-gradient
 (var(--secondary), var(--primary)); */
 
@@ -407,6 +410,7 @@ body {
     font-weight: 700;
 }
 .check {
+    display: none;
     position: absolute;
     right: 0px;
     background: #99E2D0;
@@ -415,12 +419,14 @@ body {
     height: 100%;
     /* padding: 0 15px; */
     width: 45px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
 .check i {
     transform: scale(1.5);
+    transform: rotate(180deg);
+    animation: rotate 0.5s ease 0s 1 normal both;
 }
 
 /* Bouton commander */
