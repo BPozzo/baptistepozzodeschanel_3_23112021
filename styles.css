@@ -466,7 +466,6 @@ pour revenir au cas de base */
 /* ****** test qui marche ***** */
 /* sauf que l'animation par du centre droit
 au lieu de prendre toute la hauteur */
-
 .check {
     position: absolute;
     right: 0px;
@@ -494,7 +493,6 @@ au lieu de prendre toute la hauteur */
 /* ***** fin du test ***** */
 
 /* test de décallage du prix */
-
 .menu__dish-and-price:hover .menu__dish--price {
     transform: translate(-30px, 0);
 }
@@ -502,7 +500,6 @@ au lieu de prendre toute la hauteur */
 /* ***** fin du test ***** */
 
 /* Bouton commander */
-
 .menu__command-button {
     display: flex;
     justify-content: center;
@@ -525,7 +522,7 @@ au lieu de prendre toute la hauteur */
     transition: ease 0.5s;
 }
 
-/* test animation d'apparition des plats */
+/* Animation d'apparition des plats */
 .appear {
     animation-duration: 1s;
     animation-timing-function: ease;
