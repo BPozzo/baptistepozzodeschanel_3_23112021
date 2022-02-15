@@ -408,6 +408,10 @@ body {
     padding-right: 20px;
     padding-bottom: 10px;
     font-weight: 700;
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+    transition: transform 330ms ease-in-out;
 }
 /* Animation check */
 /* enlever le a devant chaque .class 
@@ -436,7 +440,6 @@ pour revenir au cas de base */
 .amenu__dish-and-price:hover .check {
     /* display: initial; */
     transform: translate(-30px, 0);
-    /* transform: translate(0, 0); */
 }
 .amenu__dish-and-price:hover .check i {
     transform: rotate(360deg);
@@ -469,6 +472,14 @@ au lieu de prendre toute la hauteur */
 .menu__dish-and-price:hover .check i {
     transform: rotate(360deg);
 }
+/* ***** fin du test ***** */
+
+/* test de décallage du prix */
+
+.menu__dish-and-price:hover .menu__dish--price {
+    transform: translate(-30px, 0);
+}
+
 /* ***** fin du test ***** */
 
 /* Bouton commander */
