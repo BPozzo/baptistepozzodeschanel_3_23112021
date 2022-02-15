@@ -582,9 +582,62 @@ au lieu de prendre toute la hauteur */
     bottom: 0;
     left: 0;
     right: 0;
-    /* color: var(--primary); */
     visibility: hidden;
     animation: spinner 2s linear 0s 1 normal none;
+    z-index: 20;
+}
+.spinner__border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid transparent;
+    border-top: 10px solid var(--primary);
+    border-bottom: 10px solid var(--secondary);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: spinner-border 2s linear 0s 1 normal none;
+    z-index: 10;
+    visibility: hidden;
+}
+.spinner__center {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #99E2D0;
+}
+@keyframes spinner {
+    0% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    70% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes spinner-border {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 /* .spinner {
