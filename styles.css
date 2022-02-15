@@ -409,7 +409,10 @@ body {
     padding-bottom: 10px;
     font-weight: 700;
 }
-.check {
+/* Animation check */
+/* enlever le a devant chaque .class 
+pour revenir au cas de base */
+.acheck {
     /* display: none; */
     position: absolute;
     right: 0px;
@@ -419,27 +422,54 @@ body {
     height: 100%;
     padding: 25px 10px;
     width: 45px;
-    /* display: flex; */
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    transition: transform 330ms ease-in-out;
+    /* transform: scale(0); */
+    transform-origin: 50% 0%;
+}
+.acheck i {
+    font-size: 25px;
+    transition: transform 330ms ease-in-out;
+}
+.amenu__dish-and-price:hover .check {
+    /* display: initial; */
+    transform: translate(-30px, 0);
+    /* transform: translate(0, 0); */
+}
+.amenu__dish-and-price:hover .check i {
+    transform: rotate(360deg);
+}
+/* ****** test qui marche ***** */
+/* sauf que l'animation par du centre droit
+au lieu de prendre toute la hauteur */
+
+.check {
+    position: absolute;
+    right: 0px;
+    background: #99E2D0;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    height: 100%;
+    padding: 25px 10px;
+    width: 45px;
+    transform-origin: right;
+    transform: scale(0);
     transition: transform 330ms ease-in-out;
 }
 .check i {
-    /* transform: scale(1.5); */
     font-size: 25px;
     transition: transform 330ms ease-in-out;
-    /* transform: rotate(180deg);
-    animation: rotate 0.5s ease 0s 1 normal both; */
 }
-.check:hover {
-    transform: translate(-30px, 0);
+.menu__dish-and-price:hover .check {
+    /* transform: translate(-30px, 0); */
+    transform: scale(1);
 }
-/* .menu__dish-and-price:hover + .check {
-    transform: translate(-30px, 0);
-} */
-.check i:hover {
+.menu__dish-and-price:hover .check i {
     transform: rotate(360deg);
 }
+/* ***** fin du test ***** */
 
 /* Bouton commander */
 
