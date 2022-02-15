@@ -372,6 +372,21 @@ body {
     flex-direction: column;
     padding-top: 15px;
 }
+/* rajout des ... dans les menus */
+.menu__dish {
+    width: 80%;
+}
+.menu__dish--title h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.menu__dish--info p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* fin */
 .menu__dish-and-price {
     display: flex;
     justify-content: space-between;

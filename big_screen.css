@@ -41,7 +41,8 @@
 .menu__dish {
     width: 80%;
 }
-.menu__dish--title h3 {
+/* Rajouter au css global */
+/* .menu__dish--title h3 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -50,4 +51,4 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+} */
