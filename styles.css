@@ -570,3 +570,34 @@ au lieu de prendre toute la hauteur */
         opacity: 100%;
     }
 }
+
+/* Loading spinner */
+
+.spinner {
+    height: 100%;
+    background: white;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* color: var(--primary); */
+    visibility: hidden;
+    animation: spinner 2s linear 0s 1 normal none;
+}
+
+/* .spinner {
+	animation: loadingspinner 1.5s linear both;
+} */
+/* @keyframes loadingspinner {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
+  } */
