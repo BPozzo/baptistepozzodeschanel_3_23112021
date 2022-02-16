@@ -339,15 +339,29 @@ body {
     position: absolute;
     right: 15px;
     color: transparent;
+    /* color: var(--secondary); */
 }
 .menu__like--full:hover {
-    color: var(--secondary);
+    /* color: var(--secondary); */
     cursor: pointer;
-
+    animation-name: filling;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
 
     /* background: linear-gradient(var(--secondary), var(--primary));
     background-clip: content-box; */
 }
+
+@keyframes filling {
+    100% {
+        color: var(--secondary);
+    }
+}
+
 /* test à faire avec background-clip */
 
 /* background: linear-gradient
@@ -589,6 +603,7 @@ au lieu de prendre toute la hauteur */
     animation: spinner 2s linear 0s 1 normal none;
     z-index: 20;
 }
+/* Si spinner en div */
 .spinner__border {
     display: flex;
     justify-content: center;
@@ -615,6 +630,7 @@ au lieu de prendre toute la hauteur */
     border-radius: 50%;
     background-color: var(--tertiary);
 }
+/*  */
 @keyframes spinner {
     0% {
         visibility: visible;
