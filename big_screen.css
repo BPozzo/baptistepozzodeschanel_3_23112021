@@ -38,18 +38,3 @@
 .menu__bloc {
     width: 30%;
 }
-/* Rajouter au css global */
-
-/*.menu__dish {
-    width: 80%;
-}
- .menu__dish--title h3 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.menu__dish--info p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-} */
