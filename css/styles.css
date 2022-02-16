@@ -341,11 +341,12 @@ body {
     color: transparent;
 }
 .menu__like--full:hover {
-    /* color: var(--secondary); */
-    /* color: #0f9932; */
+    color: var(--secondary);
     cursor: pointer;
-    background: linear-gradient(var(--secondary), var(--primary));
-    background-clip: content-box;
+
+
+    /* background: linear-gradient(var(--secondary), var(--primary));
+    background-clip: content-box; */
 }
 /* test à faire avec background-clip */
 
