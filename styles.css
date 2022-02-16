@@ -409,7 +409,6 @@ body {
     cursor: pointer;
     box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.2);
     transition: ease 0.3s;
-    /* filter:brightness(120%); */
 }
 .menu__dish {
     display: flex;
@@ -442,7 +441,7 @@ pour revenir au cas de base */
     /* display: none; */
     position: absolute;
     right: 0px;
-    background: #99E2D0;
+    background: var(--tertiary);
     color: white;
     border-radius: 0 15px 15px 0;
     height: 100%;
@@ -472,7 +471,7 @@ au lieu de prendre toute la hauteur */
 .check {
     position: absolute;
     right: 0px;
-    background: #99E2D0;
+    background: var(--tertiary);
     color: white;
     border-radius: 0 15px 15px 0;
     height: 100%;
@@ -613,7 +612,7 @@ au lieu de prendre toute la hauteur */
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #99E2D0;
+    background-color: var(--tertiary);
 }
 @keyframes spinner {
     0% {
