@@ -207,7 +207,16 @@ body {
 }
 .restaurants__like--full:hover {
     /* display: initial; */
-    color: var(--secondary);
+    
+    /* color: var(--secondary); */
+    
+    animation-name: filling;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
 }
 /* ***** */
 .restaurants__card-new {
