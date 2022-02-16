@@ -640,17 +640,35 @@ au lieu de prendre toute la hauteur */
     }
 }
 
-/* .spinner {
-	animation: loadingspinner 1.5s linear both;
-} */
-/* @keyframes loadingspinner {
+.spinner i {
+    font-size: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary);
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: spinner-i 2s linear 0s 1 normal none;
+    z-index: 10;
+    visibility: hidden;
+}
+@keyframes spinner-i {
     0% {
-      transform: scale(1) rotateZ(0);
+        visibility: visible;
+        opacity: 1;
     }
-    50% {
-      transform: scale(2) rotateZ(180deg);
+    70% {
+        opacity: 1;
     }
     100% {
-      transform: scale(1) rotateZ(360deg);
+        transform: rotate(360deg);
+        opacity: 0;
+        visibility: hidden;
     }
-  } */
+}
