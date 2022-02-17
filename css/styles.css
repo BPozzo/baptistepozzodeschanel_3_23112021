@@ -207,7 +207,7 @@ body {
 }
 .restaurants__like--full:hover {
     /* display: initial; */
-    
+
     /* color: var(--secondary); */
     
     animation-name: filling;
@@ -405,7 +405,7 @@ body {
     transition: transform 330ms ease-in-out;
 }
 .menu__dish-and-price:hover .menu__dish {
-    width: 75%;
+    width: 70%;
 }
 .menu__dish--title h3 {
     white-space: nowrap;
