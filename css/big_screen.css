@@ -1,9 +1,12 @@
+/* Presentation */
 .discover__title {
     max-width: none;
 }
 .discover__text {
     max-width: none;
 }
+
+/* Process */
 .process__steps {
     display: flex;
     flex-direction: row;
@@ -12,6 +15,8 @@
 .process__step {
     width: 30%;
 }
+
+/* Restaurants */
 .restaurants__cards {
     flex-direction: row;
     justify-content: space-around;
@@ -21,6 +26,8 @@
 .restaurants__cards a {
     width: 45%;
 }
+
+/* Footer */
 .footer__links {
     display: flex;
     flex-direction: row;
@@ -29,7 +36,6 @@
 }
 
 /* Pages restaurants */
-
 .menu__list {
     flex-direction: row;
     width: 100%;

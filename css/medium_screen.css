@@ -1,6 +1,9 @@
+/* Presentation */
 .discover__text {
     max-width: none;
 }
+
+/* Restaurants */
 .restaurants__cards {
     flex-direction: row;
     justify-content: space-around;
@@ -10,6 +13,8 @@
 .restaurants__cards a {
     width: 45%;
 }
+
+/* Footer (si on veut le mettre sur une seule ligne) */
 /* .footer__links {
     display: flex;
     flex-direction: row;
