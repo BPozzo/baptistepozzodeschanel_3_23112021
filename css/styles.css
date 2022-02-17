@@ -5,7 +5,6 @@
     padding: 0;
     margin: 0;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     color:black;
@@ -15,7 +14,6 @@ body {
 }
 
 /* Header */
-
 .header {
     display: flex;
     justify-content: center;
@@ -32,7 +30,6 @@ body {
 }
 
 /* Localisation */
-
 .location {
     display: flex;
     justify-content: center;
@@ -45,7 +42,6 @@ body {
 }
 
 /* Discover */
-
 .discover {
     width: 100%;
     background-color: #fafafa;
@@ -82,7 +78,6 @@ body {
 }
 
 /* Process */
-
 .process__container {
     padding: 25px;
     width: 100%;
@@ -131,11 +126,9 @@ body {
 }
 
 /* Restaurants */
-
 .restaurants {
     background-color: #f6f6f6;
     padding: 25px;
-    /* max-width: 1200px; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -187,7 +180,7 @@ body {
 .restaurants__text {
     margin-left: 20px;
 }
-/* ***** test animation du coeur */
+/* Animation du coeur */
 .restaurants__like--empty {
     margin-right: 20px;
     transform: scale(2);
@@ -196,20 +189,13 @@ body {
     display: none;
 }
 .restaurants__like--full {
-    /* display: none; */
     margin-right: 20px;
     transform: scale(2.2);
     position: absolute;
-    /* right: 10px; */
     color: transparent;
     right: 0px;
-    /* Bonne position est right: 0px */
 }
-.restaurants__like--full:hover {
-    /* display: initial; */
-
-    /* color: var(--secondary); */
-    
+.restaurants__like--full:hover {    
     animation-name: filling;
     animation-duration: 0.5s;
     animation-timing-function: ease;
@@ -233,7 +219,6 @@ body {
 }
 
 /* Footer */
-
 .footer {
     width: 100%;
     background-color: #353535;
@@ -244,7 +229,6 @@ body {
     padding-bottom: 20px;
 }
 .footer__bloc {
-    /* display: inline; */
     padding: 0 40px;
     width: 100%;
     max-width: 1200px;
@@ -261,7 +245,6 @@ body {
 }
 .footer__link {
     display: inline-flex;
-    /* align-items: center; */
     flex-direction: row;
     text-align: center;
     height: 30px;
@@ -286,7 +269,6 @@ body {
 
 /* PAGES RESTAURANTS */
 /* Header */
-
 .header__return {
     position: absolute;
     left: 35px;
@@ -297,7 +279,6 @@ body {
 }
 
 /* Image */
-
 .img {
     width: 100%;
     height: 50vh;
@@ -309,7 +290,6 @@ body {
 }
 
 /* Menu */
-
 #menu {
     width: 100%;
     display: flex;
@@ -348,10 +328,8 @@ body {
     position: absolute;
     right: 15px;
     color: transparent;
-    /* color: var(--secondary); */
 }
 .menu__like--full:hover {
-    /* color: var(--secondary); */
     cursor: pointer;
     animation-name: filling;
     animation-duration: 0.5s;
@@ -377,7 +355,6 @@ body {
 (var(--secondary), var(--primary)); */
 
 /* Plats des menus */
-
 .menu__list {
     display: flex;
     flex-direction: column;
@@ -399,7 +376,7 @@ body {
     flex-direction: column;
     padding-top: 15px;
 }
-/* rajout des ... dans les menus */
+/* Animation "..." dans les menus */
 .menu__dish {
     width: 80%;
     transition: transform 330ms ease-in-out;
@@ -417,7 +394,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-/* fin */
+/* *** */
 .menu__dish-and-price {
     display: flex;
     justify-content: space-between;
@@ -453,45 +430,9 @@ body {
     padding-right: 20px;
     padding-bottom: 10px;
     font-weight: 700;
-    /* position: absolute;
-    right: 0;
-    bottom: 0; */
     transition: transform 330ms ease-in-out;
 }
 /* Animation check */
-/* enlever le a devant chaque .class 
-pour revenir au cas de base */
-.acheck {
-    /* display: none; */
-    position: absolute;
-    right: 0px;
-    background: var(--tertiary);
-    color: white;
-    border-radius: 0 15px 15px 0;
-    height: 100%;
-    padding: 25px 10px;
-    width: 45px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    transition: transform 330ms ease-in-out;
-    /* transform: scale(0); */
-    transform-origin: 50% 0%;
-}
-.acheck i {
-    font-size: 25px;
-    transition: transform 330ms ease-in-out;
-}
-.amenu__dish-and-price:hover .check {
-    /* display: initial; */
-    transform: translate(-30px, 0);
-}
-.amenu__dish-and-price:hover .check i {
-    transform: rotate(360deg);
-}
-/* ****** test qui marche ***** */
-/* sauf que l'animation par du centre droit
-au lieu de prendre toute la hauteur */
 .check {
     position: absolute;
     right: 0px;
@@ -510,20 +451,16 @@ au lieu de prendre toute la hauteur */
     transition: transform 330ms ease-in-out;
 }
 .menu__dish-and-price:hover .check {
-    /* transform: translate(-30px, 0); */
     transform: scale(1);
 }
 .menu__dish-and-price:hover .check i {
     transform: rotate(360deg);
 }
-/* ***** fin du test ***** */
 
-/* test de décallage du prix */
+/* Animation décallage du prix */
 .menu__dish-and-price:hover .menu__dish--price {
     transform: translate(-30px, 0);
 }
-
-/* ***** fin du test ***** */
 
 /* Bouton commander */
 .menu__command-button {
@@ -598,7 +535,6 @@ au lieu de prendre toute la hauteur */
 }
 
 /* Loading spinner */
-
 .spinner {
     height: 100%;
     background: white;
@@ -612,34 +548,7 @@ au lieu de prendre toute la hauteur */
     animation: spinner 2s linear 0s 1 normal none;
     z-index: 20;
 }
-/* Si spinner en div */
-.spinner__border {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 10px solid transparent;
-    border-top: 10px solid var(--primary);
-    border-bottom: 10px solid var(--secondary);
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    animation: spinner-border 2s linear 0s 1 normal none;
-    z-index: 10;
-    visibility: hidden;
-}
-.spinner__center {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: var(--tertiary);
-}
-/*  */
+
 @keyframes spinner {
     0% {
         visibility: visible;
@@ -649,20 +558,6 @@ au lieu de prendre toute la hauteur */
         opacity: 0.9;
     }
     100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-@keyframes spinner-border {
-    0% {
-        visibility: visible;
-        opacity: 1;
-    }
-    70% {
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(360deg);
         opacity: 0;
         visibility: hidden;
     }
