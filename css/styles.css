@@ -180,6 +180,7 @@ body {
 .restaurants__text {
     margin-left: 20px;
 }
+
 /* Animation du coeur */
 .restaurants__like--empty {
     margin-right: 20px;
@@ -195,16 +196,14 @@ body {
     color: transparent;
     right: 0px;
 }
-.restaurants__like--full:hover {    
-    animation-name: filling;
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: both;
-    animation-play-state: running;
-}
-/* ***** */
+.restaurants__like--full:hover {
+    animation: fill 0.5s ease-out;
+    background: linear-gradient(var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+/* Restaurants new */
 .restaurants__card-new {
     display: flex;
     justify-content: center;
@@ -331,29 +330,21 @@ body {
     color: transparent;
 }
 .menu__like--full:hover {
+    animation: fill 0.5s ease-out;
+    background: linear-gradient(var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     cursor: pointer;
-    animation-name: filling;
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: both;
-    animation-play-state: running;
+  }
 
-    /* background: linear-gradient(var(--secondary), var(--primary));
-    background-clip: content-box; */
-}
-
-@keyframes filling {
-    100% {
-        color: var(--secondary);
+@keyframes fill {
+    0% {
+      opacity: 0;
     }
-}
-
-/* test à faire avec background-clip */
-
-/* background: linear-gradient
-(var(--secondary), var(--primary)); */
+    100% {
+      opacity: 1;
+    }
+  }
 
 /* Plats des menus */
 .menu__list {
