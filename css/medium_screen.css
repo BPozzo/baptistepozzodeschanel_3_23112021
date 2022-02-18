@@ -13,14 +13,3 @@
 .restaurants__cards a {
     width: 45%;
 }
-
-/* Footer (si on veut le mettre sur une seule ligne) */
-/* .footer__links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.footer__link {
-    width: 300px;
-} */
