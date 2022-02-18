@@ -200,9 +200,10 @@ body {
     animation: fill 0.5s ease-out;
     background: linear-gradient(var(--secondary), var(--primary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+
 /* Restaurants new */
 .restaurants__card-new {
     display: flex;
@@ -333,6 +334,7 @@ body {
     animation: fill 0.5s ease-out;
     background: linear-gradient(var(--secondary), var(--primary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
   }
